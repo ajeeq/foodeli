@@ -1,0 +1,51 @@
+{
+    "data": {
+        "meVendor": {
+            "createdCategories": [
+                {
+                    "_id": "5f9eb152b05f66001741d5f6",
+                    "name": "aneka nasi",
+                    "menuItems": [
+                        {
+                            "itemName": "nasi kandar sedap",
+                            "itemPrice": 15,
+                            "itemDescription": "segar dari penang"
+                        },
+                        {
+                            "itemName": "nasi goreng mamak",
+                            "itemPrice": 8,
+                            "itemDescription": "mamak masak sedap"
+                        }
+                    ]
+                },
+                {
+                    "_id": "kxtvs7jzgh6nit8wuj9hcm8a",
+                    "name": "minuman segar",
+                    "menuItems": [
+                        {
+                            "itemName": "sky juice",
+                            "itemPrice": 2,
+                            "itemDescription": "high ke langit"
+                        }
+                    ]
+                },
+                {
+                    "_id": "90ezp4xlptjr54iaoaxe2my4",
+                    "name": "dessert",
+                    "menuItems": [
+                        {
+                            "itemName": "a piece of cake",
+                            "itemPrice": 25,
+                            "itemDescription": "it is a smol cake, what do ya expect?"
+                        }
+                    ]
+                },
+                {
+                    "_id": "tm0av04zs6rt8tbwcfd7m4ag",
+                    "name": "buah tropika",
+                    "menuItems": []
+                }
+            ]
+        }
+    }
+}

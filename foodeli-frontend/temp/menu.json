@@ -1,0 +1,19 @@
+{
+    "data": {
+        "meVendor": {
+            "createdCategories": [
+                {
+                    "_id": "5f9eb152b05f66001741d5f6",
+                    "name": "aneka nasi",
+                    "menuItems": [
+                        {
+                            "itemName": "nasi kandar sedap",
+                            "itemPrice": 50,
+                            "itemDescription": "sedap lagi enak"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

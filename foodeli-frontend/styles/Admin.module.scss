@@ -1,0 +1,121 @@
+@import "../styles/base.scss";
+
+.inner_content {
+    /* Business Admin styling*/
+    overflow-y: auto;
+    overflow-x: scroll;
+
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 80%;
+    top: 4rem;
+    left: 20%;
+
+    .content_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: #707070;
+        box-shadow: 3px 3.5px 5px 1px #70707027;
+        padding: 0rem 1.5rem;
+
+        button{
+            display: inline-block;
+            padding: 0.15rem;
+            margin: 0rem 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-family: $global-font;
+            font-size: 0.9rem;
+            width: 10rem;
+            outline: none;
+            transition: all 0.1s ease-in;
+            border-radius: $txtbtn-radius;
+
+            table {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .graph_container {
+        box-sizing: border-box;
+        height: 55%;
+        margin: 1rem 2rem;
+        border: 0.1rem solid #70707027;
+        border-radius: 0.25rem;
+
+        .graph_header {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 2.5rem;
+
+            div {
+                p {
+                    margin: 0;
+                }
+
+                // border: 1px solid;
+                // padding: 1rem;
+            }
+            
+        }
+    }
+
+    .data_table {
+        margin: 1rem 2rem;
+        margin-bottom: 5rem;
+        box-sizing: border-box;
+    }
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+
+        .MuiBox-root {
+            padding: 0rem;
+        }
+
+        .tab_table {
+            margin: 0;
+            margin-bottom: 5rem;
+            box-sizing: border-box;
+            border: 0.1rem solid #70707027;
+            border-radius: 0.25rem;
+        }
+        
+    }
+
+    /* Finance styling*/
+    .settlement-header {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+
+        div {
+            border: 1px solid #CCCCCC;
+            border-radius: 0.25rem;
+            padding: 1rem 1rem;
+            width: 12rem;
+
+            p {
+                margin: 0;
+            }
+            
+            .link {
+                color: #1D9FF2;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+           
+        }
+    }
+
+    
+}

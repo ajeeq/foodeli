@@ -1,0 +1,52 @@
+@import '../../styles/base.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  position: fixed;
+  z-index: 1;
+  height: 4rem;
+  width: 100%;
+  top: 0;
+  opacity: 0.9;
+  border-bottom: #707070;
+  box-shadow: 3px 3.5px 5px 1px #70707027;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+  }
+
+  table {
+    tr {
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  // button{
+  //   display: inline-block;
+  //   padding: 0.15rem;
+  //   margin: 0rem 0.5rem;
+  //   border: none;
+  //   cursor: pointer;
+  //   font-family: $global-font;
+  //   font-size: 0.9rem;
+  //   width: 10rem;
+  //   outline: none;
+  //   transition: all 0.1s ease-in;
+  //   border-radius: $txtbtn-radius;
+  // } 
+}

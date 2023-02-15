@@ -1,0 +1,124 @@
+// fonts:
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+$global-font: 'Source Sans Pro', sans-serif;
+
+
+
+
+// colors:
+$primary: #FFFFFF;
+$primary-light: #ffffff;
+$primary-dark: #cccccc;
+
+$secondary: #2a3747;
+$secondary-light: #546172;
+$secondary-dark: #011120;
+
+$on-primary: #000;
+$on-primary-light: #A1A1A1;
+$on-secondary: #fff;
+
+$highlight: #FA4141;
+$highlight-sidebar: #E8F0FE;
+
+
+
+
+
+// config:
+$primary-color: #1D9FF2;
+$dark-color: #343a40;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #28a745;
+
+// Margin & Padding
+$spaceamounts: (1, 2, 3, 4, 5);
+@each $space in $spaceamounts {
+  // All around margin
+  .m_#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Vertical Margin
+  .my_#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // All around Padding
+  .p_#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Vertical Padding
+  .py_#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+
+
+
+// Buttons settings
+$txtbtn-radius: 2rem;
+
+// Buttons
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: $global-font;
+  font-size: 0.9rem;
+  width: 10rem;
+  outline: none;
+  transition: all 0.1s ease-in;
+  border-radius: $txtbtn-radius;
+
+  &_btn_blue {
+    background-color: #1D9FF2;
+    color: #FFFFFF;
+  }
+
+  &_btn_white {
+    background-color: #FFFFFF;
+    color: #3C4043;
+    border: 1px solid #CCCCCC;
+  }
+
+  &_btn_primary {
+    @include set-background($primary-color);
+    &:hover {
+      background: lighten($primary-color, 5%);
+    }
+  }
+  &_btn_dark {
+    @include set-background($dark-color);
+    &:hover {
+      background: lighten($dark-color, 5%);
+    }
+  }
+  &_btn_success {
+    @include set-background($success-color);
+    &:hover {
+      background: lighten($success-color, 5%);
+    }
+  }
+  &_btn_danger {
+    @include set-background($danger-color);
+    &:hover {
+      background: lighten($danger-color, 5%);
+    }
+  }
+  // &:hover {
+  //   background: lighten($dark-color, 20%);
+  //   color: #fff;
+  // }
+}
